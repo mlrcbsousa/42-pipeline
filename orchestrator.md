@@ -45,6 +45,42 @@ Match the repo against the project registry by checking:
 
 Once identified, load the project's metadata (slug, name, category, tech, description).
 
+## Step 1.5: Prepare Working Branch
+
+Look up `linear_issue` and `linear_branch` from the registry entry for this project.
+
+**If `linear_branch` is set** (e.g. `mlrcbsousa/man-18-printf`):
+
+Print this message for the human before making any changes:
+
+```
+## Branch Required
+
+Before I make any changes, please create and check out the Linear-tracked branch:
+
+  git checkout -b mlrcbsousa/man-XX-slug
+
+This ties all pipeline commits to Linear issue MAN-XX.
+Reply "branch ready" (or just continue) once you've done this — or tell me to skip if you're running a dry-run.
+```
+
+**If `linear_branch` is null** (e.g. philosophers, ft_containers, inception-of-things):
+
+Print this message instead:
+
+```
+## No Linear Issue Found
+
+This project has no Linear issue linked in the registry yet.
+Options:
+  1. Create a MAN-XX issue in Linear for this project, update project-registry.yaml, then re-run.
+  2. Continue without a Linear branch (commits land on current branch).
+
+Reply with the Linear issue ID (e.g. "MAN-82") to auto-set the branch name, or "continue" to proceed without one.
+```
+
+Wait for the human to confirm before proceeding to the audit.
+
 ## Step 2: Audit
 
 Read and follow: `tasks/01-audit.md`

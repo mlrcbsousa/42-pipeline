@@ -13,6 +13,8 @@ projects:
     tech: [C]
     repo: mlrcbsousa/libft
     description: "Custom implementation of standard C library functions"
+    linear_issue: MAN-17
+    linear_branch: mlrcbsousa/man-17-libft
     featured: false
     order: 1
     status: needs-audit
@@ -23,6 +25,8 @@ projects:
     tech: [C]
     repo: mlrcbsousa/ft_printf
     description: "Recreation of the printf function with variadic arguments"
+    linear_issue: MAN-18
+    linear_branch: mlrcbsousa/man-18-printf
     featured: false
     order: 2
     status: needs-audit
@@ -33,6 +37,8 @@ projects:
     tech: [C]
     repo: mlrcbsousa/get_next_line
     description: "Function that reads a file descriptor line by line using a static variable"
+    linear_issue: MAN-19
+    linear_branch: mlrcbsousa/man-19-get_next_line
     featured: false
     order: 3
     status: needs-audit
@@ -43,6 +49,8 @@ projects:
     tech: [Linux, VirtualBox, System Administration]
     repo: mlrcbsousa/Born2beRoot
     description: "System administration project — configuring a virtual machine with strict security policies"
+    linear_issue: MAN-20
+    linear_branch: mlrcbsousa/man-20-born2broot
     featured: false
     order: 4
     status: needs-audit
@@ -53,6 +61,8 @@ projects:
     tech: [C, UNIX Signals]
     repo: mlrcbsousa/minitalk
     description: "Client-server communication using UNIX signals (SIGUSR1/SIGUSR2)"
+    linear_issue: MAN-22
+    linear_branch: mlrcbsousa/man-22-minitalk
     featured: false
     order: 5
     status: needs-audit
@@ -63,6 +73,8 @@ projects:
     tech: [C]
     repo: mlrcbsousa/push_swap
     description: "Sorting algorithm using two stacks with a limited set of operations"
+    linear_issue: MAN-21
+    linear_branch: mlrcbsousa/man-21-push_swap
     featured: false
     order: 6
     status: needs-audit
@@ -73,6 +85,8 @@ projects:
     tech: [C, MiniLibX, MLX42]
     repo: mlrcbsousa/fract-ol
     description: "Fractal renderer — Mandelbrot, Julia, and Burning Ship sets with zoom and color palettes"
+    linear_issue: MAN-23
+    linear_branch: mlrcbsousa/man-23-fractol
     featured: false
     order: 7
     status: needs-audit
@@ -83,6 +97,8 @@ projects:
     tech: [C, Threads, Mutexes]
     repo: mlrcbsousa/Philosophers
     description: "Dining philosophers problem — multi-threaded simulation with deadlock prevention"
+    linear_issue: null  # no Linear issue yet — create MAN-XX before running pipeline
+    linear_branch: null
     featured: false
     order: 8
     status: needs-audit
@@ -93,6 +109,8 @@ projects:
     tech: [C, POSIX, Readline]
     repo: mlrcbsousa/minishell
     description: "POSIX-compatible shell with pipes, redirections, environment variables, and builtins"
+    linear_issue: MAN-24
+    linear_branch: mlrcbsousa/man-24-minishell
     featured: true
     order: 9
     status: needs-audit
@@ -103,6 +121,8 @@ projects:
     tech: [C, MiniLibX, MLX42, Math]
     repo: mlrcbsousa/cub3d
     description: "Raycasting engine inspired by Wolfenstein 3D — real-time 3D rendering in C"
+    linear_issue: MAN-28
+    linear_branch: mlrcbsousa/man-28-cubed
     featured: true
     order: 10
     status: needs-audit
@@ -123,6 +143,8 @@ projects:
       - mlrcbsousa/CPP-Module-07
       - mlrcbsousa/CPP-Module-08
     description: "Series of C++ exercises covering OOP, templates, STL, exceptions, and polymorphism"
+    linear_issue: MAN-25
+    linear_branch: mlrcbsousa/man-25-cpp-modules
     featured: false
     order: 11
     status: needs-audit
@@ -133,6 +155,8 @@ projects:
     tech: [C++, Templates, STL]
     repo: mlrcbsousa/ft_containers
     description: "Reimplementation of vector, stack, map, and set with STL-comparable behavior"
+    linear_issue: null  # no Linear issue yet — create MAN-XX before running pipeline
+    linear_branch: null
     featured: false
     order: 12
     status: needs-audit
@@ -143,6 +167,8 @@ projects:
     tech: [Docker, Docker Compose, Nginx, MariaDB, WordPress]
     repo: mlrcbsousa/Inception
     description: "Multi-container infrastructure with Docker Compose — Nginx, WordPress, MariaDB"
+    linear_issue: MAN-27
+    linear_branch: mlrcbsousa/man-27-inception
     featured: false
     order: 13
     status: needs-audit
@@ -153,6 +179,8 @@ projects:
     tech: [C++, HTTP, Sockets]
     repo: gleal42/webserv
     description: "HTTP/1.1 web server written in C++ — CGI, virtual hosts, file uploads"
+    linear_issue: MAN-26
+    linear_branch: mlrcbsousa/man-26-webserv
     featured: false
     order: 14
     status: needs-audit
@@ -163,6 +191,8 @@ projects:
     tech: [TypeScript, NestJS, PostgreSQL, Docker]
     repo: brhaka/42-transcendence
     description: "Full-stack web application — real-time multiplayer Pong with chat, auth, and matchmaking (group project)"
+    linear_issue: MAN-29
+    linear_branch: mlrcbsousa/man-29-transcendence
     featured: true
     order: 15
     status: needs-audit
@@ -173,6 +203,8 @@ projects:
     tech: [Rust, Linear algebra]
     repo: mlrcbsousa/matrix
     description: "Linear algebra library — vectors and matrices from scratch in Rust"
+    linear_issue: MAN-31
+    linear_branch: mlrcbsousa/man-31-matrix
     featured: false
     order: 16
     status: needs-audit
@@ -183,6 +215,8 @@ projects:
     tech: [Kubernetes, Docker, k3s]
     repo: mlrcbsousa/inception-of-things
     description: "Lightweight Kubernetes cluster and app deployment (IoT / cloud track)"
+    linear_issue: null  # no Linear issue yet — create MAN-XX before running pipeline
+    linear_branch: null
     featured: false
     order: 17
     status: needs-audit
@@ -199,6 +233,8 @@ projects:
       - mlrcbsousa/python-3-oop
       - mlrcbsousa/python-4-dod
     description: "Training piscine — Python for data science (starting, arrays, datatables, OOP, data-oriented design)"
+    linear_issue: MAN-30
+    linear_branch: mlrcbsousa/man-30-python-data-science-piscine
     featured: false
     order: 18
     status: needs-audit
