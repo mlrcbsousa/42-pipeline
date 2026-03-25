@@ -1,0 +1,204 @@
+# 42 School Project Registry
+# Used by the orchestrator to identify repos and apply correct context.
+# status: needs-audit | audited | readme-done | docs-done | blog-done | complete
+#
+# See GITHUB-VERIFICATION.md for anonymous GitHub HTTP checks (404 may mean private).
+# Omitted from registry (no pipeline target): pipex, so_long, ft_irc (not done),
+# net_practice (no meaningful repo — blog-only).
+
+projects:
+  - slug: libft
+    name: libft
+    category: algo
+    tech: [C]
+    repo: mlrcbsousa/libft
+    description: "Custom implementation of standard C library functions"
+    featured: false
+    order: 1
+    status: needs-audit
+
+  - slug: ft_printf
+    name: ft_printf
+    category: algo
+    tech: [C]
+    repo: mlrcbsousa/ft_printf
+    description: "Recreation of the printf function with variadic arguments"
+    featured: false
+    order: 2
+    status: needs-audit
+
+  - slug: get_next_line
+    name: get_next_line
+    category: algo
+    tech: [C]
+    repo: mlrcbsousa/get_next_line
+    description: "Function that reads a file descriptor line by line using a static variable"
+    featured: false
+    order: 3
+    status: needs-audit
+
+  - slug: born2beroot
+    name: Born2beRoot
+    category: infra
+    tech: [Linux, VirtualBox, System Administration]
+    repo: mlrcbsousa/Born2beRoot
+    description: "System administration project — configuring a virtual machine with strict security policies"
+    featured: false
+    order: 4
+    status: needs-audit
+
+  - slug: minitalk
+    name: minitalk
+    category: infra
+    tech: [C, UNIX Signals]
+    repo: mlrcbsousa/minitalk
+    description: "Client-server communication using UNIX signals (SIGUSR1/SIGUSR2)"
+    featured: false
+    order: 5
+    status: needs-audit
+
+  - slug: push_swap
+    name: push_swap
+    category: algo
+    tech: [C]
+    repo: mlrcbsousa/push_swap
+    description: "Sorting algorithm using two stacks with a limited set of operations"
+    featured: false
+    order: 6
+    status: needs-audit
+
+  - slug: fract-ol
+    name: fract-ol
+    category: graphics
+    tech: [C, MiniLibX, MLX42]
+    repo: mlrcbsousa/fract-ol
+    description: "Fractal renderer — Mandelbrot, Julia, and Burning Ship sets with zoom and color palettes"
+    featured: false
+    order: 7
+    status: needs-audit
+
+  - slug: philosophers
+    name: Philosophers
+    category: infra
+    tech: [C, Threads, Mutexes]
+    repo: mlrcbsousa/Philosophers
+    description: "Dining philosophers problem — multi-threaded simulation with deadlock prevention"
+    featured: false
+    order: 8
+    status: needs-audit
+
+  - slug: minishell
+    name: minishell
+    category: infra
+    tech: [C, POSIX, Readline]
+    repo: mlrcbsousa/minishell
+    description: "POSIX-compatible shell with pipes, redirections, environment variables, and builtins"
+    featured: true
+    order: 9
+    status: needs-audit
+
+  - slug: cub3d
+    name: cub3D
+    category: graphics
+    tech: [C, MiniLibX, MLX42, Math]
+    repo: mlrcbsousa/cub3d
+    description: "Raycasting engine inspired by Wolfenstein 3D — real-time 3D rendering in C"
+    featured: true
+    order: 10
+    status: needs-audit
+
+  - slug: cpp-modules
+    name: C++ Modules
+    category: algo
+    tech: [C++]
+    repo: mlrcbsousa/CPP-Module-00
+    pipeline_repos:
+      - mlrcbsousa/CPP-Module-00
+      - mlrcbsousa/CPP-Module-01
+      - mlrcbsousa/CPP-Module-02
+      - mlrcbsousa/CPP-Module-03
+      - mlrcbsousa/CPP-Module-04
+      - mlrcbsousa/CPP-Module-05
+      - mlrcbsousa/CPP-Module-06
+      - mlrcbsousa/CPP-Module-07
+      - mlrcbsousa/CPP-Module-08
+    description: "Series of C++ exercises covering OOP, templates, STL, exceptions, and polymorphism"
+    featured: false
+    order: 11
+    status: needs-audit
+
+  - slug: ft_containers
+    name: ft_containers
+    category: algo
+    tech: [C++, Templates, STL]
+    repo: mlrcbsousa/ft_containers
+    description: "Reimplementation of vector, stack, map, and set with STL-comparable behavior"
+    featured: false
+    order: 12
+    status: needs-audit
+
+  - slug: inception
+    name: Inception
+    category: infra
+    tech: [Docker, Docker Compose, Nginx, MariaDB, WordPress]
+    repo: mlrcbsousa/Inception
+    description: "Multi-container infrastructure with Docker Compose — Nginx, WordPress, MariaDB"
+    featured: false
+    order: 13
+    status: needs-audit
+
+  - slug: webserv
+    name: webserv
+    category: web
+    tech: [C++, HTTP, Sockets]
+    repo: gleal42/webserv
+    description: "HTTP/1.1 web server written in C++ — CGI, virtual hosts, file uploads"
+    featured: false
+    order: 14
+    status: needs-audit
+
+  - slug: ft_transcendence
+    name: ft_transcendence
+    category: web
+    tech: [TypeScript, NestJS, PostgreSQL, Docker]
+    repo: brhaka/42-transcendence
+    description: "Full-stack web application — real-time multiplayer Pong with chat, auth, and matchmaking (group project)"
+    featured: true
+    order: 15
+    status: needs-audit
+
+  - slug: matrix
+    name: matrix
+    category: algo
+    tech: [Rust, Linear algebra]
+    repo: mlrcbsousa/matrix
+    description: "Linear algebra library — vectors and matrices from scratch in Rust"
+    featured: false
+    order: 16
+    status: needs-audit
+
+  - slug: inception-of-things
+    name: Inception of Things
+    category: infra
+    tech: [Kubernetes, Docker, k3s]
+    repo: mlrcbsousa/inception-of-things
+    description: "Lightweight Kubernetes cluster and app deployment (IoT / cloud track)"
+    featured: false
+    order: 17
+    status: needs-audit
+
+  - slug: python-piscine
+    name: Python Piscine (datascience)
+    category: algo
+    tech: [Python, Data science]
+    repo: mlrcbsousa/python-0-starting
+    pipeline_repos:
+      - mlrcbsousa/python-0-starting
+      - mlrcbsousa/python-1-array
+      - mlrcbsousa/python-2-datatable
+      - mlrcbsousa/python-3-oop
+      - mlrcbsousa/python-4-dod
+    description: "Training piscine — Python for data science (starting, arrays, datatables, OOP, data-oriented design)"
+    featured: false
+    order: 18
+    status: needs-audit
