@@ -70,7 +70,13 @@ Evaluate each area and mark as PASS, FAIL, or N/A:
 
 ### Blog Post
 
-- [ ] Blog post exists in the **manuel.software** site repo at `content/blog/<project-slug>.mdx` (or the equivalent path after the Next.js migration)
+- [ ] Blog post exists in the **manuel.software** site repo at `content/blog/<project-slug>.mdx`
+
+### Project Page
+
+- [ ] Project detail page exists in the **manuel.software** site repo at `content/projects/<project-slug>.mdx`
+- [ ] Frontmatter has `title`, `description`, `tech`, `category`, `github`, `featured`, `order`
+- [ ] If missing, flag for creation during blog post task (05) or as a standalone stub
 
 ## Output
 
@@ -79,12 +85,13 @@ Produce a summary like this:
 ```
 ## Audit: [project-name]
 
-README:     [PASS|FAIL] — [brief note]
-Makefile:   [PASS|FAIL|N/A] — [brief note]
-Docs:       [PASS|FAIL] — [brief note]
-CI/CD:      [PASS|FAIL] — [brief note]
-Git:        [PASS|FAIL] — [brief note]
-Blog Post:  [PASS|FAIL] — [brief note]
+README:       [PASS|FAIL] — [brief note]
+Makefile:     [PASS|FAIL|N/A] — [brief note]
+Docs:         [PASS|FAIL] — [brief note]
+CI/CD:        [PASS|FAIL] — [brief note]
+Git:          [PASS|FAIL] — [brief note]
+Blog Post:    [PASS|FAIL] — [brief note]
+Project Page: [PASS|FAIL] — [brief note]
 
 Sub-tasks needed: [list of 02-06 numbers]
 ```

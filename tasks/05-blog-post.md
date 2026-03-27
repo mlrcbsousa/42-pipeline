@@ -28,6 +28,17 @@ If a file for this project already exists, read it and decide:
 - If it's a full post (migrated from mlrcbsousa.com), skip this task
 - If it's a stub ("Content to be written"), replace it with a full post
 
+Also check if a project page stub exists:
+
+```bash
+ls content/projects/<project-slug>.mdx 2>/dev/null || echo "No project page stub found"
+```
+
+If no project page stub exists, create one alongside the blog post. Use the project
+registry metadata for frontmatter fields (`title`, `description`, `tech`, `category`,
+`github`, `featured`, `order`). The body can be a placeholder — the blog post is the
+detailed content.
+
 ## Writing the Post
 
 Follow the structure in `blog-style-guide.md` exactly. Key reminders:
