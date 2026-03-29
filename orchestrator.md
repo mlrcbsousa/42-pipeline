@@ -6,7 +6,7 @@ sub-tasks to bring it up to standard.
 
 ## Setup
 
-**`PIPELINE_HOME`** is the directory that contains this `orchestrator.md` file (the root of the prompt bundle — e.g. `manuel.software/prompts` or the `42-pipeline` repo after clone).
+**`PIPELINE_HOME`** is the directory that contains this `orchestrator.md` file (the root of the `42-pipeline` repo).
 
 All paths below are relative to `PIPELINE_HOME`:
 

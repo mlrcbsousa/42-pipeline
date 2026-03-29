@@ -1,38 +1,29 @@
-# 42-pipeline (public prompts)
+# 42-pipeline
 
-This repository is the **public, prompts-only** bundle for Claude Code (especially mobile / cloud sessions that cannot read a private `manuel.software` repo via raw GitHub URLs).
-
-- **Canonical copy:** maintain the same files in `manuel.software` → `prompts/` (private site repo), then sync changes here before pushing.
-- **First push:** create `github.com/mlrcbsousa/42-pipeline`, default branch `main`, push this folder as the repository root.
-
----
-
-# Project Pipeline Prompts
+Single source of truth for the 42 School project pipeline prompts.
 
 Reusable prompt system for automating documentation, CI/CD, and blog post generation
 across 42 School project repositories.
-
-**Monorepo:** this directory may also live as `Business/42-pipeline/` beside `manuel.software` on your machine; push **this** tree to GitHub.
 
 ## Quick Start
 
 ### From Desktop (Cursor / Claude Code)
 
-When working on any 42 School project repo locally, point at this folder (adjust path if your clone differs):
+When working on any 42 School project repo locally, point at the 42-pipeline clone:
 
 ```
-Read and follow prompts/orchestrator.md from the manuel.software repo for this repository.
+Read and follow orchestrator.md from the 42-pipeline repo for this repository.
 ```
 
 Example absolute path:
 
 ```
-Read and follow /Users/manuel-sousa/Code/Business/manuel.software/prompts/orchestrator.md for this repository.
+Read and follow /Users/manuel-sousa/Code/Business/42-pipeline/orchestrator.md for this repository.
 ```
 
 ### From Mobile (Claude Code Cloud)
 
-Cloud sessions only see the **connected** repo. Raw `raw.githubusercontent.com` URLs only work for **public** repos, so prompts are mirrored to **`42-pipeline`** (prompts only — no personal site code).
+Cloud sessions only see the **connected** repo. Use raw GitHub URLs to fetch prompts from this public repository.
 
 When starting a session on a project repo, paste (replace `main` if your default branch differs):
 
